@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ── CSS Variables ──────────────────────────────────────────────────────────── */
+:root {
+  --pl-purple:  #37003C;
+  --pl-gold:    #FFD700;
+  --pl-pink:    #FF2882;
+  --pl-green:   #00FF85;
+  --surface:    #F8F9FC;
+  --radius:     12px;
+}
+
+/* ── Base ───────────────────────────────────────────────────────────────────── */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-surface text-gray-900 antialiased;
+  font-feature-settings: 'cv02', 'cv03', 'cv04', 'cv11';
+}
+
+/* ── Scroll-reveal animation ─────────────────────────────────────────────────
+   Add data-animate to any element to get a fade-up-on-scroll effect.
+   The JS in _app.js adds the .visible class via IntersectionObserver.
+*/
+[data-animate] {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.65s cubic-bezier(0.4, 0, 0.2, 1),
+              transform 0.65s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+[data-animate][data-delay='100'] { transition-delay: 0.10s; }
+[data-animate][data-delay='200'] { transition-delay: 0.20s; }
+[data-animate][data-delay='300'] { transition-delay: 0.30s; }
+[data-animate][data-delay='400'] { transition-delay: 0.40s; }
+[data-animate][data-delay='500'] { transition-delay: 0.50s; }
+
+[data-animate].visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ── Custom scrollbar ────────────────────────────────────────────────────────*/
+::-webkit-scrollbar       { width: 6px; }
+::-webkit-scrollbar-track { background: #f1f1f1; }
+::-webkit-scrollbar-thumb { background: #c5b4c8; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: var(--pl-purple); }
+
+/* ── Typography helpers ──────────────────────────────────────────────────────*/
+.gradient-text {
+  background: linear-gradient(135deg, var(--pl-purple) 0%, #7c3aed 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.gold-text {
+  background: linear-gradient(135deg, var(--pl-gold) 0%, #f59e0b 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ── Hero background ─────────────────────────────────────────────────────────*/
+.hero-bg {
+  background: linear-gradient(135deg, #1a0020 0%, #37003C 40%, #1e1b4b 100%);
+}
+
+.project-hero-bg {
+  background: linear-gradient(135deg, #37003C 0%, #1e1b4b 60%, #0f172a 100%);
+}
+
+/* ── Card styles ─────────────────────────────────────────────────────────────*/
+.chart-card {
+  @apply bg-white rounded-2xl p-6 shadow-card border border-gray-100;
+  transition: box-shadow 0.25s ease, transform 0.25s ease;
+}
+
+.chart-card:hover {
+  @apply shadow-card-hover;
+  transform: translateY(-2px);
+}
+
+/* ── Pill / badge ────────────────────────────────────────────────────────────*/
+.pill {
+  @apply inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold tracking-wide;
+}
+
+/* ── Section divider ─────────────────────────────────────────────────────────*/
+.section-divider {
+  @apply border-t border-gray-100 my-2;
+}
+
+/* ── Plotly override: keep transparent background ──────────────────────────*/
+.js-plotly-plot .plotly .main-svg {
+  border-radius: 8px;
+}
