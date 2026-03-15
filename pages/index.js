@@ -2,13 +2,15 @@ import Link from 'next/link'
 
 const TOOLS = [
   { name: 'Python',       icon: '🐍', color: 'bg-blue-50 text-blue-700 border-blue-200' },
-  { name: 'Pandas',       icon: '🐼', color: 'bg-green-50 text-green-700 border-green-200' },
-  { name: 'Plotly',       icon: '📊', color: 'bg-purple-50 text-purple-700 border-purple-200' },
-  { name: 'Scikit-learn', icon: '🤖', color: 'bg-orange-50 text-orange-700 border-orange-200' },
   { name: 'SQL',          icon: '🗄️', color: 'bg-slate-50 text-slate-700 border-slate-200' },
-  { name: 'Next.js',      icon: '⚡', color: 'bg-gray-50 text-gray-700 border-gray-200' },
+  { name: 'R',            icon: '📉', color: 'bg-sky-50 text-sky-700 border-sky-200' },
+  { name: 'Tableau',      icon: '📊', color: 'bg-orange-50 text-orange-700 border-orange-200' },
+  { name: 'Power BI',     icon: '💡', color: 'bg-yellow-50 text-yellow-700 border-yellow-200' },
+  { name: 'Pandas',       icon: '🐼', color: 'bg-green-50 text-green-700 border-green-200' },
+  { name: 'Scikit-learn', icon: '🤖', color: 'bg-violet-50 text-violet-700 border-violet-200' },
+  { name: 'Alteryx',      icon: '⚙️', color: 'bg-red-50 text-red-700 border-red-200' },
+  { name: 'A/B Testing',  icon: '🧪', color: 'bg-teal-50 text-teal-700 border-teal-200' },
   { name: 'Statistics',   icon: '📐', color: 'bg-rose-50 text-rose-700 border-rose-200' },
-  { name: 'Jupyter',      icon: '📓', color: 'bg-amber-50 text-amber-700 border-amber-200' },
 ]
 
 export default function Home() {
@@ -38,8 +40,8 @@ export default function Home() {
 
           {/* Subtitle */}
           <p className="animate-fade-up [animation-delay:0.15s] text-lg sm:text-xl text-white/65 leading-relaxed max-w-xl mx-auto font-light">
-            I turn raw data into clear stories and actionable insights —
-            from Premier League prediction models to interactive dashboards.
+            Technical Analyst at Wayfair · London. I turn raw data into clear
+            stories — from YouTube campaign models to Premier League predictions.
           </p>
 
           {/* CTAs */}
@@ -81,23 +83,37 @@ export default function Home() {
               Turning noise into <span className="gradient-text">signal</span>
             </h2>
             <p className="text-gray-500 leading-relaxed">
-              I'm a data analytics engineer passionate about finding patterns in complex datasets
-              and communicating them through clean, interactive visualizations. My work spans sports
-              analytics, predictive modelling, and full-stack data applications.
+              I'm a <strong className="text-gray-700">Technical Analyst at Wayfair</strong> in London,
+              where I manage and optimise YouTube marketing campaigns using data-driven insights —
+              running A/B tests, geo-lift studies, and building data pipelines that feed into
+              Media Mix Modelling. I graduated from <strong className="text-gray-700">Babson College</strong> with
+              a BS in Business Analytics &amp; Marketing, and spent a semester at IE Business School in Madrid.
             </p>
             <p className="text-gray-500 leading-relaxed">
-              The projects here are designed to be portfolio-quality — every chart is interactive,
+              My career started in marketing, which gives me a rare edge: I understand both the business
+              question <em>and</em> the data behind it. I work across Python, R, SQL, Tableau, and Power BI —
+              and I co-founded the <strong className="text-gray-700">Babson Marketing Society</strong>, which grew
+              to 350+ members during my time there.
+            </p>
+            <p className="text-gray-500 leading-relaxed">
+              This portfolio showcases the analytical side of that journey — every chart is interactive,
               every insight is evidence-based, and every model is rigorously validated.
             </p>
+            <a
+              href="mailto:anantshah00@gmail.com"
+              className="inline-flex items-center gap-2 text-sm font-semibold text-pl-purple hover:text-indigo-700 transition-colors"
+            >
+              anantshah00@gmail.com ↗
+            </a>
           </div>
 
           {/* Stats */}
           <div data-animate data-delay="200" className="grid grid-cols-2 gap-4">
             {[
-              { value: '12+',    label: 'Seasons analysed',    icon: '⚽' },
-              { value: '95%',    label: 'Model ROC-AUC',        icon: '🎯' },
-              { value: '0.97',   label: 'Best Pearson r',       icon: '📈' },
-              { value: '6',      label: 'Interactive charts',   icon: '📊' },
+              { value: 'Wayfair',  label: 'Current employer',     icon: '🏢' },
+              { value: '2+',       label: 'Years in analytics',   icon: '📈' },
+              { value: '350+',     label: 'BMS members founded',  icon: '🎓' },
+              { value: '70K+',     label: 'Campaign impressions', icon: '🚀' },
             ].map(({ value, label, icon }) => (
               <div key={label} className="bg-white rounded-2xl p-5 border border-gray-100 shadow-card text-center hover:shadow-card-hover hover:-translate-y-1 transition-all duration-300">
                 <div className="text-2xl mb-1.5">{icon}</div>
