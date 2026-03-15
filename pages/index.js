@@ -41,7 +41,7 @@ export default function Home() {
           {/* Subtitle */}
           <p className="animate-fade-up [animation-delay:0.15s] text-lg sm:text-xl text-white/65 leading-relaxed max-w-xl mx-auto font-light">
             Technical Analyst at Wayfair · London. I turn raw data into clear
-            stories — from YouTube campaign models to Premier League predictions.
+            stories – from YouTube campaign models to Premier League predictions.
           </p>
 
           {/* CTAs */}
@@ -84,19 +84,19 @@ export default function Home() {
             </h2>
             <p className="text-gray-500 leading-relaxed">
               I'm a <strong className="text-gray-700">Technical Analyst at Wayfair</strong> in London,
-              where I manage and optimise YouTube marketing campaigns using data-driven insights —
+              where I manage and optimise YouTube marketing campaigns using data-driven insights –
               running A/B tests, geo-lift studies, and building data pipelines that feed into
               Media Mix Modelling. I graduated from <strong className="text-gray-700">Babson College</strong> with
               a BS in Business Analytics &amp; Marketing, and spent a semester at IE Business School in Madrid.
             </p>
             <p className="text-gray-500 leading-relaxed">
               My career started in marketing, which gives me a rare edge: I understand both the business
-              question <em>and</em> the data behind it. I work across Python, R, SQL, Tableau, and Power BI —
+              question <em>and</em> the data behind it. I work across Python, R, SQL, Tableau, and Power BI –
               and I co-founded the <strong className="text-gray-700">Babson Marketing Society</strong>, which grew
               to 350+ members during my time there.
             </p>
             <p className="text-gray-500 leading-relaxed">
-              This portfolio showcases the analytical side of that journey — every chart is interactive,
+              This portfolio showcases the analytical side of that journey – every chart is interactive,
               every insight is evidence-based, and every model is rigorously validated.
             </p>
             <a

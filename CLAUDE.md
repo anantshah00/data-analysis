@@ -78,6 +78,13 @@ portfolio-site/
 
 ---
 
+## Writing & Style Rules
+- **Dashes:** Always use en dashes (–) in visible text. Never use em dashes (—).
+- **Tone:** Professional but approachable — clear, evidence-based, not salesy.
+- **Tense:** Present tense for current role, past tense for previous roles.
+
+---
+
 ## Owner Details
 - **Name:** Anant Shah
 - **Email:** anantshah00@gmail.com

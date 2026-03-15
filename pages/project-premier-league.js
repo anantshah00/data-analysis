@@ -84,7 +84,7 @@ export default function PremierLeaguePage() {
 
           <p className="text-white/60 text-base leading-relaxed max-w-2xl">
             A 12-season data science investigation into which performance variables
-            most reliably separate title winners from the rest — from traditional
+            most reliably separate title winners from the rest – from traditional
             metrics to modern expected-goals analytics.
           </p>
 
@@ -125,7 +125,7 @@ export default function PremierLeaguePage() {
         {/* ── 1. Project Overview ──────────────────────────────────────── */}
         <section id="overview">
           <SectionHeader
-            eyebrow="01 — Overview"
+            eyebrow="01 – Overview"
             title="The Problem"
             subtitle="The Premier League is the most-watched football league on earth. But what actually separates a title winner from the rest?"
           />
@@ -135,7 +135,7 @@ export default function PremierLeaguePage() {
               <h3 className="font-bold text-gray-800">Why it matters</h3>
               <p className="text-gray-500 text-sm leading-relaxed">
                 Every pre-season, clubs spend hundreds of millions of euros and pundits
-                make bold predictions — often getting it wrong. This project asks:
+                make bold predictions – often getting it wrong. This project asks:
                 if we strip away the noise, <em>which objective metrics</em> most
                 reliably predict who lifts the trophy?
               </p>
@@ -170,7 +170,7 @@ export default function PremierLeaguePage() {
         {/* ── 2. Dataset ───────────────────────────────────────────────── */}
         <section id="dataset">
           <SectionHeader
-            eyebrow="02 — Data"
+            eyebrow="02 – Data"
             title="Dataset Description"
             subtitle="Season-level aggregates for the top-5 finishing teams across 12 Premier League seasons, sourced from three public datasets."
           />
@@ -178,7 +178,7 @@ export default function PremierLeaguePage() {
           {/* Sources */}
           <div data-animate className="grid sm:grid-cols-3 gap-4 mb-8">
             {[
-              { name: 'football-data.co.uk', desc: 'Match results, shots, goals, cards — free CSVs', icon: '📋', color: 'border-blue-200 bg-blue-50/50' },
+              { name: 'football-data.co.uk', desc: 'Match results, shots, goals, cards – free CSVs', icon: '📋', color: 'border-blue-200 bg-blue-50/50' },
               { name: 'FBref.com',            desc: 'xG, xG against, progressive passes, pressures', icon: '⚽', color: 'border-green-200 bg-green-50/50' },
               { name: 'Transfermarkt',        desc: 'Squad market values (€ millions)',               icon: '💶', color: 'border-amber-200 bg-amber-50/50' },
             ].map(({ name, desc, icon, color }) => (
@@ -228,7 +228,7 @@ export default function PremierLeaguePage() {
         {/* ── 3. Visualizations ────────────────────────────────────────── */}
         <section id="visualizations">
           <SectionHeader
-            eyebrow="03 — EDA"
+            eyebrow="03 – EDA"
             title="Exploratory Analysis"
             subtitle="Six interactive charts exploring the relationships between performance metrics and championship outcomes."
           />
@@ -265,7 +265,7 @@ export default function PremierLeaguePage() {
             </div>
             <div data-animate data-delay="100">
               <PlotlyChart
-                title="Champions vs The Rest — Key Metrics"
+                title="Champions vs The Rest – Key Metrics"
                 subtitle="Season averages across 12 seasons · champions show consistently higher values"
                 data={groupedBarChart.data}
                 layout={groupedBarChart.layout}
@@ -297,7 +297,7 @@ export default function PremierLeaguePage() {
         {/* ── 4. Key Insights ──────────────────────────────────────────── */}
         <section id="insights">
           <SectionHeader
-            eyebrow="04 — Findings"
+            eyebrow="04 – Findings"
             title="Key Insights"
             subtitle="Five evidence-based conclusions drawn from the statistical and model analysis."
             center
@@ -308,7 +308,7 @@ export default function PremierLeaguePage() {
               icon="📐"
               accent="gold"
               title="Goal Difference is the #1 Predictor"
-              description="Pearson r = 0.97 with final points — the strongest correlation in the dataset. Champions average a +57 goal difference vs +27 for non-champions. Both scoring AND defending matter equally."
+              description="Pearson r = 0.97 with final points – the strongest correlation in the dataset. Champions average a +57 goal difference vs +27 for non-champions. Both scoring AND defending matter equally."
               delay="0"
             />
             <InsightCard
@@ -322,14 +322,14 @@ export default function PremierLeaguePage() {
               icon="🧱"
               accent="indigo"
               title="Clean Sheets Are Underrated"
-              description="Champions average 19.4 clean sheets vs 13.5 for others — a 44% difference. Defensive solidity is as important as attacking firepower, yet rarely headlined in transfer speculation."
+              description="Champions average 19.4 clean sheets vs 13.5 for others – a 44% difference. Defensive solidity is as important as attacking firepower, yet rarely headlined in transfer speculation."
               delay="200"
             />
             <InsightCard
               icon="💰"
               accent="emerald"
               title="Money Is Necessary But Not Sufficient"
-              description="Squad value shows a Spearman ρ = 0.72 with points. All champions had high squad values — except Leicester City 2016, whose counter-pressing exploited wealthier teams with just €65M."
+              description="Squad value shows a Spearman ρ = 0.72 with points. All champions had high squad values – except Leicester City 2016, whose counter-pressing exploited wealthier teams with just €65M."
               delay="0"
             />
             <InsightCard
@@ -385,9 +385,9 @@ export default function PremierLeaguePage() {
         {/* ── 5. Model Explanation ─────────────────────────────────────── */}
         <section id="model">
           <SectionHeader
-            eyebrow="05 — Modelling"
+            eyebrow="05 – Modelling"
             title="How the Model Works"
-            subtitle="A binary classification pipeline — predicting champion (1) vs non-champion (0) — evaluated with stratified cross-validation."
+            subtitle="A binary classification pipeline – predicting champion (1) vs non-champion (0) – evaluated with stratified cross-validation."
           />
 
           <div className="grid lg:grid-cols-3 gap-6 mb-8">
@@ -488,7 +488,7 @@ export default function PremierLeaguePage() {
               <p className="text-white/65 leading-relaxed text-sm mb-6">
                 Across 12 seasons and 60 team-observations, <strong className="text-white">goal
                 difference and xG differential</strong> are the most powerful predictors of Premier
-                League success — combining attacking output with defensive solidity in a single
+                League success – combining attacking output with defensive solidity in a single
                 number. The Random Forest model achieves <strong className="text-white">95%
                 ROC-AUC</strong> in cross-validation and correctly identified the 2023-24 champion
                 without seeing that season during training.
@@ -523,7 +523,7 @@ export async function getStaticProps() {
     props: {
       title: 'Premier League Champion Predictor',
       description:
-        'Data science investigation into which variables best predict the next Premier League winner — xG, goal difference, and Random Forest modelling.',
+        'Data science investigation into which variables best predict the next Premier League winner – xG, goal difference, and Random Forest modelling.',
     },
   }
 }

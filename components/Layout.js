@@ -9,7 +9,7 @@ export default function Layout({ children, title, description }) {
 
   const pageDescription =
     description ||
-    'Data analytics portfolio by Anant — sports analytics, machine learning, and interactive visualizations.'
+    'Data analytics portfolio by Anant – sports analytics, machine learning, and interactive visualizations.'
 
   return (
     <>
