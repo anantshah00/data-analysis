@@ -35,6 +35,6 @@ git push origin main
 
 echo ""
 echo "✅  Done! Vercel is deploying now."
-echo "🌐  Site: https://anant-portfolio.vercel.app"
+echo "🌐  Site: https://anantshah-analytics.vercel.app"
 echo "📊  Vercel dashboard: https://vercel.com/dashboard"
 echo ""

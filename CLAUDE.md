@@ -9,7 +9,7 @@ It gives Claude full context so you never have to re-explain the project.
 **Anant's Data Analytics Portfolio** — a Next.js website showcasing a sports
 analytics project predicting Premier League winners.
 
-- **Live site:** https://anant-portfolio.vercel.app  ← update this if URL changes
+- **Live site:** https://anantshah-analytics.vercel.app
 - **GitHub repo:** https://github.com/anantshah00/data-analysis
 - **Local path:** /Users/anant/ClaudeCode/portfolio-site
 
