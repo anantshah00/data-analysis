@@ -113,7 +113,7 @@ export default function Home() {
               { value: 'Wayfair',   label: 'Current employer',    icon: '🏢' },
               { value: '2+',        label: 'Years in analytics',  icon: '📈' },
               { value: 'ML/AI',     label: 'Driven by',           icon: '🤖' },
-              { value: '5+',        label: 'Industries analysed', icon: '🌍' },
+              { value: '5+',        label: 'Industries analysed', icon: '🔀' },
             ].map(({ value, label, icon }) => (
               <div key={label} className="bg-white rounded-2xl p-5 border border-gray-100 shadow-card text-center hover:shadow-card-hover hover:-translate-y-1 transition-all duration-300">
                 <div className="text-2xl mb-1.5">{icon}</div>
