@@ -86,7 +86,7 @@ export const correlationChart = {
     {
       type: 'bar',
       orientation: 'h',
-      x: [-0.63, -0.48, -0.42, -0.38, 0.35, 0.38, 0.42, 0.44, 0.51, 0.52, 0.54, 0.55, 0.58, 0.62, 0.65, 0.68, 0.74],
+      x: [-0.63, -0.48, -0.42, -0.38, 0.35, 0.38, 0.42, 0.44, 0.51, 0.52, 0.54, 0.55, 0.58, 0.62, 0.65, 0.74],
       y: [
         'PPDA (Pressing)',
         'xG Match Variance',
@@ -103,11 +103,10 @@ export const correlationChart = {
         'Ball Progression/90',
         'xG Differential',
         'Goal Difference',
-        'Squad Value (€M)',
         'Squad Value',
       ],
       marker: {
-        color: [-0.63, -0.48, -0.42, -0.38, 0.35, 0.38, 0.42, 0.44, 0.51, 0.52, 0.54, 0.55, 0.58, 0.62, 0.65, 0.68, 0.74],
+        color: [-0.63, -0.48, -0.42, -0.38, 0.35, 0.38, 0.42, 0.44, 0.51, 0.52, 0.54, 0.55, 0.58, 0.62, 0.65, 0.74],
         colorscale: [
           [0.0,  '#ef4444'],
           [0.45, '#fca5a5'],
@@ -121,7 +120,7 @@ export const correlationChart = {
         showscale: false,
         line: { color: 'rgba(0,0,0,0.08)', width: 0.5 },
       },
-      text: [-0.63, -0.48, -0.42, -0.38, 0.35, 0.38, 0.42, 0.44, 0.51, 0.52, 0.54, 0.55, 0.58, 0.62, 0.65, 0.68, 0.74].map(v => v.toFixed(2)),
+      text: [-0.63, -0.48, -0.42, -0.38, 0.35, 0.38, 0.42, 0.44, 0.51, 0.52, 0.54, 0.55, 0.58, 0.62, 0.65, 0.74].map(v => v.toFixed(2)),
       textposition: 'outside',
       textfont: { size: 10.5, color: '#374151', family: 'Inter' },
       hovertemplate: '<b>%{y}</b><br>Lagged Pearson r = %{x:.3f}<extra></extra>',
